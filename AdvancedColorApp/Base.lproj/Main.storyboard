@@ -83,12 +83,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-Jf-xUF">
                                                 <rect key="frame" x="-2" y="0.0" width="131" height="31"/>
+                                                <connections>
+                                                    <action selector="updateResultView" destination="BYZ-38-t0r" eventType="valueChanged" id="wer-Aq-cS6"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HjV-tu-cvU">
                                                 <rect key="frame" x="-2" y="45" width="131" height="31"/>
+                                                <connections>
+                                                    <action selector="updateResultView" destination="BYZ-38-t0r" eventType="valueChanged" id="FkO-Bp-VY5"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SH5-Bv-fpg">
                                                 <rect key="frame" x="-2" y="90" width="131" height="31"/>
+                                                <connections>
+                                                    <action selector="updateResultView" destination="BYZ-38-t0r" eventType="valueChanged" id="GHJ-Lv-7He"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -142,6 +151,13 @@
                             <constraint firstItem="Lr6-6X-bHD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xx0-Jy-hHI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="SH5-Bv-fpg" id="ZxQ-dM-ZOc"/>
+                        <outlet property="doneButton" destination="ubp-wh-GmM" id="3Hi-7z-2Sb"/>
+                        <outlet property="greenSlider" destination="HjV-tu-cvU" id="Mb5-me-WtW"/>
+                        <outlet property="redSlider" destination="K0S-Jf-xUF" id="LAH-yh-liz"/>
+                        <outlet property="resultView" destination="Lr6-6X-bHD" id="Rf1-IC-Itm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
